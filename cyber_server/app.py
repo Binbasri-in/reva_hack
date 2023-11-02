@@ -4,6 +4,7 @@ from vulnerability import vulnurabilities
 from news import new
 from encript import encript
 from decrypt import decrypt
+
 # from malicious import malicious_url
 app=Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -11,7 +12,6 @@ app.register_blueprint(vulnurabilities)
 app.register_blueprint(new)
 app.register_blueprint(encript)
 app.register_blueprint(decrypt)
-    
 
 
 if __name__ == '__main__':
