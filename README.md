@@ -99,7 +99,7 @@ Deploy it to Heroku and <a href="https://github.com/Binbasri-in/try_hack_deploy"
       </td>
       <td align="center">
         <a href="https://github.com/Sammy-100">
-          <img width="100" src="https://avatars3.githubusercontent.com/u/39334864?s=460&v=4](https://avatars.githubusercontent.com/u/107463781?v=4" alt="Samiksha"><br/>
+          <img width="100" src="https://avatars.githubusercontent.com/u/107463781?v=4" alt="Samiksha"><br/>
           <sub><b>SAMIKSHA </b></sub>
         </a>
       </td>
