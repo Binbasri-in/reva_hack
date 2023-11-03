@@ -22,9 +22,10 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
 ## Requirements
 * [`npm`](https://www.npmjs.com/get-npm)
 * [`react native`](https://facebook.github.io/react-native)
+* [`flask`](https://flask.palletsprojects.com/en/3.0.x/)
 * [`redux`](https://redux.js.org/)
 * [`react navigation`](https://reactnavigation.org/)
-* [`API Data`](https://github.com/ihsaninh/crossword-api)
+  
 
    
 ## How To Run Front End
