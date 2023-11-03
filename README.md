@@ -58,6 +58,11 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
    ```
    $ python app.py
    ```
+
+OR
+Deploy it to Heroku and <a href="https://github.com/Binbasri-in/try_hack_deploy">here is the guide</a>
+
+
 ## Screenshoot
 <div align="center">
     <img width="200" src="./images/5.jpeg"> 
