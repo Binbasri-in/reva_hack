@@ -38,16 +38,7 @@ vulnerabilities = vulnerabilities_by_id = {
 }
 
 
-template_prompt = [
-    {
-        "role": "system",
-        "content": "you are a cyber security expert who understands bits and bytes of cyber security"
-    },
-    {
-        "role": "user",
-        "content": "generate a step-by-step guide to fix the following vulnerability after explaining it first: {0}"
-    }
-]
+
 
 
 chatbot = Blueprint("chatbot", __name__)
@@ -80,7 +71,17 @@ def ask_openai():
 
 @chatbot.route("/chatbot/<int:vul_id> ", method=["POST"])
 def template_prompt(vul_id):
-    messages = template_prompt.format(vulnerabilities[vul_id])
+    template_prompt = [
+        {
+            "role": "system",
+            "content": "you are a cyber security expert who understands bits and bytes of cyber security"
+        },
+        {
+            "role": "user",
+            "content": "generate a step-by-step guide to fix the following vulnerability after explaining it first: {0}"
+        }
+    ]
+    messages = template_prompt[1]["content"].format(vulnerabilities[vul_id])
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-16k-0613",
