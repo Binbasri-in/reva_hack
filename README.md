@@ -45,8 +45,8 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
    ```
 ## Screenshoot
 <div align="center">
-    <img width="200" src="./images/1.jpeg">   
     <img width="200" src="./images/2.jpeg">  
+    <img width="200" src="./images/1.jpeg"> 
     <img width="200" src="./images/3.jpeg">    
     <img width="200" src="./images/4.jpeg">
     <img width="200" src="./images/5.jpeg">   
@@ -59,8 +59,8 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
   <table>
     <tr>
       <td align="center">
-        <a href="https://github.com/raghav029>
-          <img width="100" src="https://avatars.githubusercontent.com/u/104291406?v=4" alt="RAGHAV "><br/>
+        <a href="https://github.com/raghav029">
+          <img width="100" src="https://github.com/account" alt="RAGHAV KUMAR JHA"><br/>
           <sub><b>RAGHAV KUMAR JHA</b></sub>
         </a>
       </td>
