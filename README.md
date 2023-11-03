@@ -26,22 +26,36 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
 * [`react navigation`](https://reactnavigation.org/)
 * [`API Data`](https://github.com/ihsaninh/crossword-api)
 
-
-## How To Run
+   
+## How To Run Front End
 
 1. Clone this repository
    ```
-   $ git clone https://github.com/ihsaninh/CrossWords-React-Native.git
+   $ https://github.com/Binbasri-in/reva_hack.git
    ```
 2. Install all depedencies on the package.json
    ```
-   $ cd CrossWords-React-Native
-   $ npm install
+   $ cd reva_hack
+   $ npm i
    ```
 3. Run Application
    ```
-   $ react-native start
-   $ react-native run-android or react-native run-ios
+   $ npx expo start 
+   $ Scan the Qr in expo app or Enter 'a' to run on emulator 
+   ```
+
+
+   ## How To Run Back End
+
+1. Install all requirements.txt
+   ```
+   $ cd reva_hack
+   $ cd cyber_server
+   $ pip install requirements.txt
+   ```
+3. Run Backend
+   ```
+   $ python app.py
    ```
 ## Screenshoot
 <div align="center">
