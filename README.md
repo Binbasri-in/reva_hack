@@ -56,26 +56,26 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
   <table>
     <tr>
       <td align="center">
-        <a href="https://github.com/achlanbima">
+        <a href="https://github.com/raghav029>
           <img width="100" src="https://avatars.githubusercontent.com/u/104291406?v=4" alt="RAGHAV "><br/>
           <sub><b>RAGHAV KUMAR JHA</b></sub>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/azizituntungan321">
-          <img width="100" src="https://avatars2.githubusercontent.com/u/50772608?s=460&v=4" alt="Azizi Mukmin"><br/>
+        <a href="https://github.com/jitendriyadeep">
+          <img width="100" src="https://avatars.githubusercontent.com/u/110286705?v=4" alt="Azizi Mukmin"><br/>
           <sub><b>JITENDRIYA DEEP</b></sub>
         </a>
       </td>
        <td align="center">
-        <a href="https://github.com/ihsaninh">
-          <img width="100" src="https://avatars0.githubusercontent.com/u/24758414?s=460&v=4" alt="Ihsan Nurul Habib"><br/>
-          <sub><b>MOHAMMED ALI</b></sub>
+        <a href="https://github.com/loki2107">
+          <img width="100" src="https://avatars.githubusercontent.com/u/107473210?v=4" alt="LOKESH E"><br/>
+          <sub><b>LOKESH E</b></sub>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/rswnn">
-          <img width="100" src="https://avatars3.githubusercontent.com/u/39334864?s=460&v=4" alt="Riswan Ardiansyah"><br/>
+        <a href="https://github.com/Sammy-100">
+          <img width="100" src="https://avatars3.githubusercontent.com/u/39334864?s=460&v=4](https://avatars.githubusercontent.com/u/107463781?v=4" alt="Samiksha"><br/>
           <sub><b>SAMIKSHA </b></sub>
         </a>
       </td>
