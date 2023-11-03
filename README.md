@@ -52,7 +52,7 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
    ```
    $ cd reva_hack
    $ cd cyber_server
-   $ pip install requirements.txt
+   $ pip install -r requirements.txt
    ```
 3. Run Backend
    ```
