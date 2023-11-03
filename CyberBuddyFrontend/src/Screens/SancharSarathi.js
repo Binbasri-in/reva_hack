@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
   },
   heading2:{
     fontSize: 20,
+    //fontWeight: 'bold',
     marginBottom: 16,
 
   },

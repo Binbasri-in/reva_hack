@@ -13,8 +13,9 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import MaskedView from "@react-native-masked-view/masked-view";
-import axios from "axios"
+import axios from "axios";
 import { uri } from "../../../globalvariable/globalvariable";
+import CustomAlertModal from "../../Components/alertmodel";
 
 const Scanner = ({navigation}) => {
   const handleUrlChange = (text) => {
@@ -27,7 +28,10 @@ const Scanner = ({navigation}) => {
   
   const [url, setUrl] = useState("");
   const [vulnerabilities, setVulnerabilities] = useState([]);
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  
   const getVulnerability = (async () => {
     try {
       setLoading(true);
@@ -118,12 +122,14 @@ const Scanner = ({navigation}) => {
     ) : (
       vulnerabilities.map((vulnerability, index) => (
         <TouchableOpacity
-          key={index}
-          onPress={() => handleVulnerabilityPress(vulnerability)}
-          style={styles.vulnerabilityBlock}
-        >
-          <Text style={styles.vulnerabilityText}>{vulnerability}</Text>
-        </TouchableOpacity>
+    key={index}
+    onPress={() => handleVulnerabilityPress(vulnerability)}
+    style={styles.vulnerabilityBlock}
+  >
+    <Text style={styles.vulnerabilityText}>{vulnerability}</Text>
+    {/* If you want to show the explanation on the main screen, uncomment the following line: */}
+    {/* <Text>{vulnerability.explanation}</Text> */}
+  </TouchableOpacity>
       ))
     )}
 

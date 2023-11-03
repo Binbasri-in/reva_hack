@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 
 import {
@@ -22,43 +21,11 @@ const Login = ({ navigation }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
 
-
-  const handleLogin = () => {
-    fetch('http://your-api-url/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-    })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.user) {
-        const role = data.user.role;
-        if (role === 'student') {
-          // Navigate to the Admin screen
-          navigation.navigate('Parent')
-        } else {
-          // Navigate to the User screen
-          navigation.navigate('UserScreen');
-        }
-      } else {
-        Alert.alert('Login failed', data.error);
-      }
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  };
-
-  // // handel user login
-  // const handleLogin =  async () => {
+  // handel user login
+  const handleLogin =  async () => {
     
-  //   navigation.navigate('Parent')
-  // };
+    navigation.navigate('Parent')
+  };
   // handel forgot password
   const handleForgotPassword = () => {
     navigation.navigate("forgetpassword");

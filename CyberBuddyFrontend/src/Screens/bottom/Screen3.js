@@ -38,11 +38,11 @@ const Screen3 =  ({navigation}) => {
         style={{ width: "100%", height: 350,borderRadius:20
       }}
       />
-        <Text style={{fontWeight:'bold'}}>Author: {news.author}</Text>
+        <Text style={{fontWeight:'bold',color:"white"}}>Author: {news.author}</Text>
         <Text></Text>
-        <Text>Full News: {news.fullNews}</Text>
+        <Text style={{color:"white",textAlign:"justify"}}>Full News: {news.fullNews}</Text>
         <Text></Text>
-        <Text style={{fontWeight:'bold'}}>Date: {news.newsDate}</Text>
+        <Text style={{fontWeight:'bold',color:"white"}}>Date: {news.newsDate}</Text>
       </View>
     );
   };
@@ -57,7 +57,7 @@ const Screen3 =  ({navigation}) => {
   };
 
   return (
-    <View>
+    <View style={{backgroundColor:"#CF424B"}}>
       <View style={styles.header}>
         <TouchableOpacity
           onPress={() => {
@@ -76,8 +76,8 @@ const Screen3 =  ({navigation}) => {
           }
         >
           <LinearGradient
-            colors={["red", "black"]}
-            start={[0.5, 0]}
+            colors={["white", "white"]}
+            start={[0.2, 0]}
             end={[1, 1]}
             style={styles.yellowHeader}
           >
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingTop: 10,
     height: 70,
-    backgroundColor: "#fff",
+    backgroundColor: "#010220",
     elevation: 50,
   },
   headerTitle: {
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
   },
   headerMenuIcon: {
-    color: "#000",
+    color: "white",
     top: 10,
     marginLeft: 20,
   },
@@ -140,8 +140,11 @@ const styles = StyleSheet.create({
    
   },
   card: {
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#010220",
     borderRadius: 20,
+    borderWidth:3,
+    elevation:10,
+    borderColor:"white",
     padding: 16,
     marginBottom: 16,
     width:360,
