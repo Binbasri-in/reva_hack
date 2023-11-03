@@ -10,6 +10,8 @@ import {
 } from "react-native";
 import axios from "axios";
 import { uri } from "../../globalvariable/globalvariable";
+import { TouchableOpacity } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 const Sofia = ({ navigation }) => {
   const [url, setUrl] = useState("");
@@ -97,9 +99,20 @@ const Sofia = ({ navigation }) => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ backgroundColor: "#010220" }}
+      contentContainerStyle={styles.container}
+    >
       <View style={styles.container}>
         <View style={styles.header}>
+        <TouchableOpacity
+           onPress={() => {
+            navigation.goBack();
+          }}
+        >
+          <Ionicons name="arrow-back" size={24} style={{top: 30,left:5,
+    color: "white"}} />
+        </TouchableOpacity>
           <Text style={styles.headerText}>STEGANOGRAPHY</Text>
         </View>
       </View>
@@ -113,12 +126,15 @@ const Sofia = ({ navigation }) => {
         onChangeText={handleUrlChange}
         placeholder="Enter Here"
       />
-      <View style={{width:250,alignSelf:"center"}}>
-        <Button
+      <View style={{ width: 250, alignSelf: "center" }}>
+        {/* <Button
           title="Fetch Image"
           onPress={handleImageFetch}
           style={styles.fetchButton}
-        />
+        /> */}
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttontext}>Fetch Image</Text>
+        </TouchableOpacity>
       </View>
       {imageUri !== "" && (
         <Image source={{ uri: imageUri }} style={styles.image} />
@@ -131,13 +147,30 @@ const Sofia = ({ navigation }) => {
         style={styles.HtextInput}
       />
       <View style={styles.buttonRow}>
-        <Button title="Download" onPress={handleDownload} />
+        {/* <Button title="Download" onPress={handleDownload} />
         <Button title="Reset" onPress={handleReset} />
-        <Button title="Encrypt" onPress={handleEncrypt} />
+        <Button title="Encrypt" onPress={handleEncrypt} /> */}
+
+      <TouchableOpacity onPress={handleDownload} style={styles.button}>
+        <Text style={styles.buttontext}>Download</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleReset} style={[styles.button,{left:5}]}>
+        <Text style={styles.buttontext}>Reset</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleEncrypt} style={[styles.button,{left:7}]}>
+        <Text style={styles.buttontext}>Encrypt</Text>
+      </TouchableOpacity>
       </View>
-      <TextInput>{imgResp.image_uri}</TextInput>
+      <View style={{borderWidth:2,borderColor:"white",left:15,marginRight:15,width:"90%",height:60}}>
+        <TextInput style={{color:"white"}}>{imgResp.image_uri}</TextInput>
+      </View>
       <View style={styles.decode}>
-        <Button title="DECODE" onPress={handleDecrypt} />
+        {/* <Button title="DECODE" onPress={handleDecrypt} /> */}
+        <TouchableOpacity
+          style={styles.button}  onPress={handleDecrypt}
+        >
+          <Text style={styles.buttontext}>DECODE</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -145,11 +178,11 @@ const Sofia = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "#5FD4DB",
+    backgroundColor: "#010220",
     padding: 10,
     marginTop: 0,
-    height:80,
-    paddingTop:35
+    height: 80,
+    paddingTop: 15,
   },
   mainContainer: {
     justifyContent: "center",
@@ -161,21 +194,26 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 20,
     fontWeight: "bold",
-    alignSelf:"center"
+    alignSelf: "center",
+    color: "white",
+    marginBottom:10
   },
   container: {
     paddingBottom: 10,
+    backgroundColor: "#010220",
   },
   text: {
     marginBottom: 20,
     fontSize: 16,
-    marginLeft:10
+    marginLeft: 10,
+    color: "white",
   },
   Htext: {
     //marginBottom:20,
     fontSize: 16,
     marginTop: 50,
-    marginLeft:10
+    marginLeft: 10,
+    color: "white",
   },
 
   title: {
@@ -184,6 +222,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 30,
     marginLeft: 10,
+    color: "white",
   },
   textInput: {
     borderWidth: 1,
@@ -191,19 +230,20 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     padding: 10,
     marginBottom: 10,
-    width:350,
-    marginLeft:10,
-   
+    width: 350,
+    marginLeft: 10,
+    color: "white",
   },
   HtextInput: {
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "white",
     borderRadius: 4,
     padding: 10,
     marginBottom: 10,
     marginTop: 10,
-    width:350,
-    marginLeft:10,
+    width: 350,
+    marginLeft: 10,
+    color: "white",
   },
   image: {
     marginTop: 20,
@@ -215,10 +255,26 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: 10,
     margin: 60,
+    marginHorizontal:10
   },
   decode: {
     width: 350,
     alignSelf: "center",
+    marginTop:20
+  },
+  button: {
+    flex: 1,
+    alignSelf: "center",
+    backgroundColor: "#CC4E59",
+    width: 120,
+    borderRadius: 20,
+    height: 30,
+  },
+  buttontext: {
+    color: "white",
+    fontSize:18,
+    alignSelf:"center",
+    justifyContent:"center"
   },
 });
 
