@@ -75,7 +75,7 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
     <tr>
       <td align="center">
         <a href="https://github.com/raghav029">
-          <img width="100" src="https://github.com/account" alt="RAGHAV KUMAR JHA"><br/>
+          <img width="100" src="https://avatars.githubusercontent.com/u/104291406?s=96&v=4" alt="RAGHAV KUMAR JHA"><br/>
           <sub><b>RAGHAV KUMAR JHA</b></sub>
         </a>
       </td>
