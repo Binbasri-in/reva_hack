@@ -43,12 +43,7 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
    $ react-native run-android or react-native run-ios
    ```
 ## Screenshoot
-<div align="center">
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/LOGIN.png">   
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/DASHBOARD.png">  
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/GAME.png">    
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/QUESTIONS.png">   
-</div>
+
 
 
 ## Contributors
@@ -57,8 +52,8 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
     <tr>
       <td align="center">
         <a href="https://github.com/achlanbima">
-          <img width="100" src="https://avatars3.githubusercontent.com/u/34331373?s=460&v=4" alt="Achlan Bima"><br/>
-          <sub><b>LOKESH E</b></sub>
+          <img width="100" src="https://avatars.githubusercontent.com/u/104291406?v=4" alt="RAGHAV KUMAR JHA"><br/>
+          <sub><b>RAGHAV KUMAR JHA</b></sub>
         </a>
       </td>
       <td align="center">
