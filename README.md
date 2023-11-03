@@ -2,11 +2,12 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
-- [How to Run](#howtorun)
-- [Screenshoots](#screenshoot)
+- [How To Run](#how-to-run)
+- [Screenshoot](#screenshoot)
 - [Contributors](#contributors)
 
 ## Introduction
@@ -44,10 +45,10 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
    ```
 ## Screenshoot
 <div align="center">
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/LOGIN.png">   
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/DASHBOARD.png">  
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/GAME.png">    
-    <img width="200" src="https://github.com/ihsaninh/CrossWords-React-Native/blob/master/QUESTIONS.png">   
+    <img width="200" src="./images/1.jpeg">   
+    <img width="200" src="./images/2.jpeg">  
+    <img width="200" src="./images/3.jpeg">    
+    <img width="200" src="./images/4.jpeg">   
 </div>
 
 
