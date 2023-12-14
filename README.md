@@ -32,11 +32,11 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
 
 1. Clone this repository
    ```
-   $ https://github.com/Binbasri-in/reva_hack.git
+   $ https://github.com/raghav029/hackaphasia.git
    ```
 2. Install all depedencies on the package.json
    ```
-   $ cd reva_hack
+   $ cd hackaphasia
    $ npm i
    ```
 3. Run Application
@@ -50,8 +50,8 @@ A crossword is a word puzzle that usually takes the form of a square or a rectan
 
 1. Install all requirements.txt
    ```
-   $ cd reva_hack
-   $ cd cyber_server
+   $ cd hackaphasia
+   $ cd hackaphasia
    $ pip install -r requirements.txt
    ```
 3. Run Backend
