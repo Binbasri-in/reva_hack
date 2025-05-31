@@ -112,3 +112,11 @@ Deploy it to Heroku and <a href="https://github.com/Binbasri-in/try_hack_deploy"
     </tr>
   </table>
 </center>
+
+
+
+npm ci
+npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1
+npx expo start --web
+npx expo export --platform web
+npm install --save-dev @babel/plugin-transform-export-namespace-from
